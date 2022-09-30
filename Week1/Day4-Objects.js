@@ -41,6 +41,8 @@ console.log(person.favMusics[0]);
 //////////////
 // Activity 1:
 
+// Answer is in the first "Zoom activity" of that file
+
 //////////////
 // Activity 2:
 
@@ -62,6 +64,7 @@ console.log(pet.drink());
 
 //////////////
 // Activity 3:
+
 let orderTotal = 0;
 let coffeeShop = {
   branch: "Fulwood",
@@ -98,18 +101,3 @@ let coffeeShop = {
 };
 
 //console.log(coffeeShop.drinksOrdered("Coke"));
-
-function countPositivesSumNegatives(input) {
-  let result = [];
-  let positiveSum = [];
-  let negativeSum = 0;
-  for (let i = 0; i < input.length; i++) {
-    if (input[i] >= 0) {
-      positiveSum.push(input[i]);
-    } else {
-      negativeSum += input[i];
-    }
-  }
-  result.push(positiveSum.length, negativeSum);
-  return result;
-}

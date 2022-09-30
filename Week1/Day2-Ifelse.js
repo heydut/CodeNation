@@ -100,15 +100,52 @@ if (time <= 7 || time >= 19) {
 //////////////
 // Activity 7:
 
-let string =
+let vowels = "aeiou";
+let target =
   "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi";
-let stringA = string.lastIndexOf("a");
-let stringE = string.lastIndexOf("e");
-let stringI = string.lastIndexOf("i");
-let stringO = string.lastIndexOf("o");
-let stringU = string.lastIndexOf("u");
 
-console.log(stringI);
+let vowelIndexArr = [];
+
+for (let i = 0; i < target.length; i++) {
+  for (let j = 0; j < vowels.length; j++) {
+    if (target[i] == vowels[j]) {
+      vowelIndexArr.push(i);
+    }
+  }
+}
+
+let lastIndex = 0;
+
+vowelIndexArr.forEach((num) => {
+  if (lastIndex < num) {
+    lastIndex = num;
+  }
+});
+
+console.log(`The index of the last vowel in the string is: ${lastIndex}`);
 
 //////////////
-// Activity 7:
+// Activity 8:
+
+let word = "Ana";
+if (word[0].toLowerCase() === word[word.length - 1].toLowerCase()) {
+  console.log("true");
+  return true;
+} else {
+  console.log("false");
+  return false;
+}
+
+//////////////
+// Activity 9:
+
+let num1 = 4;
+let num2 = 4;
+
+if ((num1 + num2) % 2 === 0) {
+  console.log("even");
+  return num1 + num2;
+} else {
+  console.log("odd");
+  return num1 * num2;
+}

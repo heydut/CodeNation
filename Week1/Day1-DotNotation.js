@@ -23,7 +23,7 @@
 
 //
 
-const array1 = [
+/* const array1 = [
   "    |    |    ",
   "    |    |    ",
   "    |    |    ",
@@ -31,15 +31,20 @@ const array1 = [
 ];
 
 for (let i = 0; i < 3; i++) {
-  for (let j = 0; j < array.length; j++) {
-    console.log(array[j]);
+  for (let j = 0; j < array1.length; j++) {
+    console.log(array1[j]);
     if (i === 2) {
-      array.pop();
+      array1.pop();
     }
   }
 }
 
-const arrays = [
+console.log(array1); */
+
+//////////////
+// Activity 1:
+
+const array = [
   "    |    |    ",
   "    |    |    ",
   "    |    |    ",
@@ -59,7 +64,7 @@ for (let i = 0; i < 3; i++) {
   }
 }
 
-const arrayss = [
+/* const arrayss = [
   "     |     |     ",
   "     |     |     ",
   "     |     |     ",
@@ -76,3 +81,5 @@ const arrayss = [
 for (let i = 0; i < array.length; i++) {
   console.log(array[i]);
 }
+
+*/

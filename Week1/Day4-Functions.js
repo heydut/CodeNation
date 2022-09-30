@@ -47,6 +47,8 @@ const takeOrder = (topping1, topping2) => {
 };
 
 takeOrder("ham", "cheese");
+takeOrder("chicken", "cheese");
+takeOrder("tomato", "cheese");
 
 //////////////
 // Activity 3:
