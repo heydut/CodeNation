@@ -1,0 +1,19 @@
+Git, terminal:
+
+cd: check with folder you are
+cd *name*: select other folder to move on
+ls: list all the folders
+mkdir *folder-name*: create a new folder
+new-item *item-name*: create a new item with the extension
+
+.lenght
+.toUpperCase() (method always have () in the end)
+
+console.log(Math.random());
+Math.random() : random number
+Math.floor() : full/integer/hole random number (without .45834536)
+Math.ceil() : always round a number up to the next largest integer
+Math.round() : 
+
+// comments in javascript
+node *dotNotation.js / file name* for run js inside terminal
