@@ -4,9 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <script src="Day1-HTML.js"></script>
+  <body">
+    <style>
+      body {
+        color: #303030;
+      }
+      img {
+        border-radius: 50%;
+        width: 100px;
+        float: left;
+      }
+
+      header h1 {
+        padding-left: 125px;
+      }
+    </style>
+
+    <header>
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C5603AQGnXEflgOSASQ/profile-displayphoto-shrink_800_800/0/1653679530497?e=1670457600&v=beta&t=fsBpR0Vm8rzYA6OonFej0nDCozMYg5sE8WIY1MeNXw0"
+      />
+      <h1>Hey!👋🏻</h1>
+      <h1>My name is Mayranne.</h1>
+    </header>
+    <hr style="border-top: 1px dashed lightgray" />
+
+    <button
+      style="
+      color: grey;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 12px;
+        float: right;
+        box-shadow: -5px -5px 30px #fff, 10px 10px 30px #eeeef040;
+      "
+    >
+      Click for check my page with CSS!
+    </button>
+
+    <section id="about-me">
+      <h2>About me:</h2>
+      <p>
+        Hey! I moved to the UK recently and I'm studying to become a web
+        developer! Currently I already have knowledge in the area of graphic
+        design (which is an area of studies that I love) and I intend to combine
+        this with programming that I'm learning right now in CodeNation
+        Bootcamp! 💖✨
+      </p>
+    </section>
+
+    <section id="favourites">
+      <h3>My favourite foods:</h3>
+      <ul>
+        <li>🍩 Donut</li>
+        <li>🍿 Popcorn</li>
+        <li>🍕 Pizza</li>
+      </ul>
+
+      <h3>My favourite seasons:</h3>
+      <ol>
+        <li>🌺 Spring</li>
+        <li>🍂 Autumn</li>
+        <li>☃️ Winter</li>
+      </ol>
+    </section>
+
+    <section id="targets">
+      <h3>My targets for this month:</h3>
+      <div>
+        🔸<strong>Learn more HTML & CSS:</strong> This week we will learn about
+        HTML & CSS, but knowledge about the "basic" is never too much. 🚀
+      </div>
+      <div>
+        🔸<strong>Research more about JavaScript:</strong> We learned a lot last
+        week but there's still a lot about javascript that I need to learn. 🪄
+      </div>
+      <div>
+        🔸<strong>Learn about how to use DOM:</strong> To manipulate the HTML
+        from within the JavaScript page. 💡
+      </div>
+    </section>
+    <br />
+    <hr style="border-top: 1px dashed lightgray" />
+    <form action="#">
+      <label for="fUsername">Username:</label><br />
+      <input type="text" id="fUsername" name="Username" value="John" /><br />
+      <label for="fPassword">Password:</label><br />
+      <input
+        type="password"
+        id="fPassword"
+        name="Password"
+        value="Password"
+      /><br />
+      <label for="fEmail">Email:</label><br />
+      <input
+        type="email"
+        id="fEmail"
+        name="Email"
+        value="Your@email.co.uk"
+      /><br /><br />
+      <input type="radio" id="MasterS" value="Master Software" />
+      <label for="MasterS">Master Software</label><br />
+      <input type="radio" id="MasterC" value="Master Cyber" />
+      <label for="MasterC">Master Cyber</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <hr style="border-top: 1px dashed lightgray" />
+
+    <footer>
+      <p>
+        Let's connect!
+        <a href="https://www.linkedin.com/in/mayranne/" target="_blank"
+          >LinkedIn</a
+        >
+        &
+        <a href="https://www.instagram.com/mayranne/" target="_blank"
+          >Instagram</a
+        >.
+      </p>
+    </footer>
+
+    <script src="Day2-CSS.js"></script>
   </body>
 </html>
