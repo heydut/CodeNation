@@ -6,101 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link id="css-link" rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C5603AQGnXEflgOSASQ/profile-displayphoto-shrink_800_800/0/1653679530497?e=1670457600&v=beta&t=fsBpR0Vm8rzYA6OonFej0nDCozMYg5sE8WIY1MeNXw0"
-      />
-      <h1>Hey!👋🏻</h1>
-      <h1>My name is Mayranne.</h1>
-    </header>
-    <hr style="border-top: 1px dashed lightgray" />
+    <div id="without-css">
+      <header>
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C5603AQGnXEflgOSASQ/profile-displayphoto-shrink_800_800/0/1653679530497?e=1670457600&v=beta&t=fsBpR0Vm8rzYA6OonFej0nDCozMYg5sE8WIY1MeNXw0"
+        />
+        <h1>Hey!👋🏻</h1>
+        <h1>My name is Mayranne.</h1>
+      </header>
+      <hr style="border-top: 1px dashed lightgray" />
+      <button>Click for check my page with CSS!</button>
+      <section id="about-me">
+        <h2>About me:</h2>
+        <p>
+          Hey! I moved to the UK recently and I'm studying to become a web
+          developer! Currently I already have knowledge in the area of graphic
+          design (which is an area of studies that I love) and I intend to
+          combine this with programming that I'm learning right now in
+          CodeNation Bootcamp! 💖✨
+        </p>
+      </section>
+      <section id="favourites">
+        <h3>My favourite foods:</h3>
+        <ul>
+          <li>🍩 Donut</li>
+          <li>🍿 Popcorn</li>
+          <li>🍕 Pizza</li>
+        </ul>
 
-    <button>Click for check my page with CSS!</button>
+        <h3>My favourite seasons:</h3>
+        <ol>
+          <li>🌺 Spring</li>
+          <li>🍂 Autumn</li>
+          <li>☃️ Winter</li>
+        </ol>
+      </section>
+      <section id="targets">
+        <h3>My targets for this month:</h3>
+        <div>
+          🔸<strong>Learn more HTML & CSS:</strong> This week we will learn
+          about HTML & CSS, but knowledge about the "basic" is never too much.
+          🚀
+        </div>
+        <div>
+          🔸<strong>Research more about JavaScript:</strong> We learned a lot
+          last week but there's still a lot about javascript that I need to
+          learn. 🪄
+        </div>
+        <div>
+          🔸<strong>Learn about how to use DOM:</strong> To manipulate the HTML
+          from within the JavaScript page. 💡
+        </div>
+      </section>
+      <br />
+      <hr style="border-top: 1px dashed lightgray" />
+      <form action="#">
+        <label for="fUsername">Username:</label><br />
+        <input type="text" id="fUsername" name="Username" value="John" /><br />
+        <label for="fPassword">Password:</label><br />
+        <input
+          type="password"
+          id="fPassword"
+          name="Password"
+          value="Password"
+        /><br />
+        <label for="fEmail">Email:</label><br />
+        <input
+          type="email"
+          id="fEmail"
+          name="Email"
+          value="Your@email.co.uk"
+        /><br /><br />
+        <input type="radio" id="MasterS" value="Master Software" />
+        <label for="MasterS">Master Software</label><br />
+        <input type="radio" id="MasterC" value="Master Cyber" />
+        <label for="MasterC">Master Cyber</label><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <hr style="border-top: 1px dashed lightgray" />
+      <footer>
+        <p>
+          Let's connect!
+          <a href="https://www.linkedin.com/in/mayranne/" target="_blank"
+            >LinkedIn</a
+          >
+          &
+          <a href="https://www.instagram.com/mayranne/" target="_blank"
+            >Instagram</a
+          >.
+        </p>
+      </footer>
+    </div>
 
-    <section id="about-me">
-      <h2>About me:</h2>
-      <p>
-        Hey! I moved to the UK recently and I'm studying to become a web
-        developer! Currently I already have knowledge in the area of graphic
-        design (which is an area of studies that I love) and I intend to combine
-        this with programming that I'm learning right now in CodeNation
-        Bootcamp! 💖✨
-      </p>
-    </section>
-
-    <section id="favourites">
-      <h3>My favourite foods:</h3>
-      <ul>
-        <li>🍩 Donut</li>
-        <li>🍿 Popcorn</li>
-        <li>🍕 Pizza</li>
-      </ul>
-
-      <h3>My favourite seasons:</h3>
-      <ol>
-        <li>🌺 Spring</li>
-        <li>🍂 Autumn</li>
-        <li>☃️ Winter</li>
-      </ol>
-    </section>
-
-    <section id="targets">
-      <h3>My targets for this month:</h3>
-      <div>
-        🔸<strong>Learn more HTML & CSS:</strong> This week we will learn about
-        HTML & CSS, but knowledge about the "basic" is never too much. 🚀
-      </div>
-      <div>
-        🔸<strong>Research more about JavaScript:</strong> We learned a lot last
-        week but there's still a lot about javascript that I need to learn. 🪄
-      </div>
-      <div>
-        🔸<strong>Learn about how to use DOM:</strong> To manipulate the HTML
-        from within the JavaScript page. 💡
-      </div>
-    </section>
-    <br />
-    <hr style="border-top: 1px dashed lightgray" />
-    <form action="#">
-      <label for="fUsername">Username:</label><br />
-      <input type="text" id="fUsername" name="Username" value="John" /><br />
-      <label for="fPassword">Password:</label><br />
-      <input
-        type="password"
-        id="fPassword"
-        name="Password"
-        value="Password"
-      /><br />
-      <label for="fEmail">Email:</label><br />
-      <input
-        type="email"
-        id="fEmail"
-        name="Email"
-        value="Your@email.co.uk"
-      /><br /><br />
-      <input type="radio" id="MasterS" value="Master Software" />
-      <label for="MasterS">Master Software</label><br />
-      <input type="radio" id="MasterC" value="Master Cyber" />
-      <label for="MasterC">Master Cyber</label><br /><br />
-      <input type="submit" value="Submit" />
-    </form>
-
-    <hr style="border-top: 1px dashed lightgray" />
-
-    <footer>
-      <p>
-        Let's connect!
-        <a href="https://www.linkedin.com/in/mayranne/" target="_blank"
-          >LinkedIn</a
-        >
-        &
-        <a href="https://www.instagram.com/mayranne/" target="_blank"
-          >Instagram</a
-        >.
-      </p>
-    </footer>
+    <div id="with-css">
+      <header>
+        <h1>Hello hjw!</h1>
+        <p>Hello hjw!</p>
+      </header>
+      <section></section>
+      <section></section>
+      <section></section>
+      <footer></footer>
+    </div>
 
     <script src="real.js"></script>
   </body>

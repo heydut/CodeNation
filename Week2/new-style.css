@@ -1,0 +1,26 @@
+:root {
+  --grey1: #ececec;
+  --grey2: #858585;
+  --grey3: #acacac;
+  --grey4: #a4a4a4;
+  --grey5: #1c1c1c;
+}
+
+body {
+  background: url(imgs/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--grey1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+}
+
+h1 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+}

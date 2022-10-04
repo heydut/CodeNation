@@ -6,7 +6,7 @@ activateCss.addEventListener("click", () => {
     '<link id="css-link" rel="stylesheet" href="style.css">';
   document.head.innerHTML +=
     '<link id="css-link" rel="stylesheet" href="new-style.css">';
-  document.getElementsByClassName("without-css").remove();
+  document.getElementById("without-css").remove();
 });
 
 // const desactivateCss = document.querySelector("button");
