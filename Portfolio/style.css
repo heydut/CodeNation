@@ -12,6 +12,12 @@
   --gradient4: #90eee6;
 }
 
+.glass {
+  background: rgba(255, 255, 255, 0.21);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,11 +44,13 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 
-  color: white;
+  color: #fff;
+  font-size: 24px;
   font-family: "Roboto", sans-serif;
 }
 
 a {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -50,9 +58,94 @@ a {
 /* Nav bar */
 
 nav {
-  background-color: #1c1c1c;
-  opacity: 0%;
-  height: 240px;
+  max-width: 1280px;
+
+  display: flex;
+  justify-content: flex-end;
+
+  margin: auto;
+  padding-top: 30px;
+}
+
+.navbar {
+  margin-right: 4%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin-left: 40px;
+}
+
+/*********************/
+/* Header */
+
+header {
+  height: 250px;
+}
+
+.header-box {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+
+  max-width: 1280px;
+}
+
+.header-box .hello-text {
+  display: flex;
+  position: relative;
+}
+
+.header-box .hello-text h2 {
+  font-size: 200px;
+  letter-spacing: -10px;
+  opacity: 50%;
+
+  top: -30px;
+  position: absolute;
+}
+
+.header-box .searchbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  padding-top: 150px;
+  position: relative;
+}
+
+.searchbar .bar {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  height: 50px;
+  width: 450px;
+}
+
+.searchbar .bar i {
+  margin-right: 25px;
+}
+
+.searchbar img:nth-child(1) {
+  position: absolute;
+  left: -35px;
+  width: 85px;
+}
+
+.searchbar img:nth-child(2) {
+  position: absolute;
+  bottom: -25px;
+  right: 50px;
+  width: 50px;
+
+  rotate: 30deg;
 }
 
 /*********************/
@@ -76,17 +169,10 @@ nav {
   max-width: 1280px;
 }
 
-#about .about-box .hello img {
-  position: absolute;
-  height: 200px;
-  top: -170px;
-  left: 425px;
-}
-
 #about .about-box .about-image img {
   bottom: 0px;
   height: 530px;
-  width: auto;
+  left: 25px;
   position: absolute;
 }
 
@@ -99,7 +185,6 @@ nav {
 
 #about .about-box .about-text {
   flex: 2;
-  font-size: 24px;
   line-height: 48px;
   text-align: right;
   margin-right: 4%;
