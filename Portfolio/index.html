@@ -1,73 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mayranne</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <a href="#about"></a>
-        <a href="#portfolio"></a>
-        <a href="#contact"></a>
+      <ul>
+        <li><a href="#about"></a></li>
+        <li><a href="#portfolio"></a></li>
+        <li><a href="#contact"></a></li>
+      </ul>
     </nav>
-    <header>
-    </header>
-    <div id="main-box">
-        <div class="main-image">
-            <section id="name">
-                <svg viewBox="35 -40 200 375">
-                    <path id="MyPath" fill="none" d="
-                            M 60, 60 A 10 10 0 1 1 120 -1 
-                            m -70, -55
-                            a 20,20 0 1,0 80,0
-                            a 20,20 0 1,0 -80,0
-                            " />
-                    <text>
-                        <textPath href="#MyPath">My name is Mayranne!</textPath>
-                    </text>
-
-                </svg>
-            </section>
-            <img class="hand" src="imgs/Hand.png" />
-            <img class="gif" src="imgs/Gif2.gif" />
+    <header></header>
+    <section id="about">
+      <div class="about-box">
+        <div class="hello">
+          <img src="imgs/Hello-smile.png" />
         </div>
-        <div class="main-text">
-            <section id="about">
-                <p class="about-text">
-                    I'm a <strong>graphic designer</strong> and soon I'll be a <strong>junior software
-                        developer</strong>! <br>
-                    I'm currently doing the Bootcamp Master Software on CodeNation and<br>
-                    my objective is to work with <strong>web design</strong> as a <strong>front-end developer</strong>.
-                    <br>
-                    I love researching design trends, inspiration for future projects <br>
-                    and lots of ideas to keep improving my skills.
-                </p>
-
-                <div class="expand">
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                        <span>Recent Projects</span>
-                    </div>
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-                        <span>GitHub</span>
-                    </div>
-
-                </div>
-
+        <div class="about-image">
+          <!-- <h2 class="circle-text">My name is Mayranne!</h2> -->
+          <img class="hand" src="imgs/Hand-withname.png" />
+          <img class="gif" src="imgs/Gif3.gif" />
         </div>
-        </section>
-    </div>
+        <div class="about-text">
+          <p class="small-text">
+            I'm a <strong>graphic designer</strong> and soon I'll be a
+            <strong>junior software developer</strong>! <br />
+            I'm currently doing the Bootcamp Master Software on CodeNation
+            and<br />
+            my objective is to work with <strong>web design</strong> as a
+            <strong>front-end developer</strong>.
+            <br />
+            I love researching design trends, inspiration for future projects
+            <br />
+            and lots of ideas to keep improving my skills.
+          </p>
+          <div class="expand-icon">
+            <div class="button">
+              <div class="icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <span>Recent Projects</span>
+            </div>
+            <div class="button">
+              <div class="icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="abilities"></section>
     <section id="timeline"></section>
     <section id="skills"></section>
@@ -76,7 +70,7 @@
     <section id="contact"></section>
     <footer></footer>
 
+    <script src="node_modules\circletype\dist\circletype.min.js"></script>
     <script src="javascript.js"></script>
-</body>
-
+  </body>
 </html>

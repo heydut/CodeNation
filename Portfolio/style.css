@@ -46,13 +46,19 @@ a {
   text-decoration: none;
 }
 
+/*********************/
+/* Nav bar */
+
 nav {
   background-color: #1c1c1c;
   opacity: 0%;
   height: 240px;
 }
 
-#main-box {
+/*********************/
+/* Section about */
+
+#about .about-box {
   background: rgba(255, 255, 255, 0.21);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 16px;
@@ -65,119 +71,115 @@ nav {
   justify-content: center;
   margin: auto;
 
-  height: 400px;
-  width: 80%;
-
-  /* overflow: hidden; */
   position: relative;
+  height: 400px;
+  max-width: 1280px;
 }
 
-textPath {
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: -2px;
+#about .about-box .hello img {
+  position: absolute;
+  height: 200px;
+  top: -170px;
+  left: 425px;
 }
 
-svg {
-  z-index: 5;
-}
-
-#main-box img {
-  height: 475px;
+#about .about-box .about-image img {
+  bottom: 0px;
+  height: 530px;
   width: auto;
   position: absolute;
-
-  left: 2%;
-  bottom: 0px;
 }
 
-#main-box .hand {
+#about .about-box .about-image .hand {
   z-index: -1;
 }
-#main-box .gif {
+#about .about-box .about-image .gif {
   z-index: -2;
 }
 
-.main-text {
+#about .about-box .about-text {
   flex: 2;
+  font-size: 24px;
+  line-height: 48px;
   text-align: right;
   margin-right: 4%;
-  line-height: 48px;
 }
 
-.main-image {
-  flex: 1;
-}
-
-.about-text {
-  font-size: 24px;
-}
-
-/*************/
-
-.expand .button {
-  border-radius: 50px;
-  cursor: pointer;
-
+.expand-icon .button {
   background: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
-  transition: all 0.3s ease-out;
 
-  display: inline-block;
-  overflow: hidden;
+  border-radius: 50px;
+  cursor: pointer;
   height: 60px;
   width: 60px;
-  margin: 0 5px;
+
+  margin: 20px 5px 0px 0px;
+  overflow: hidden;
+  display: inline-flex;
 }
 
-.expand .button:hover {
-  border: 0.1px solid rgba(255, 255, 255, 0.9);
-  width: auto;
-}
-
-.expand .button .icon {
-  display: inline-block;
+.expand-icon .button .icon {
+  display: flex;
   height: 60px;
   width: 60px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 50px;
   box-sizing: border-box;
   line-height: 60px;
+}
+
+.expand-icon .button .icon i {
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.expand-icon .button,
+.expand-icon .button .icon,
+.expand-icon .button .icon i,
+.expand-icon .button span {
   transition: all 0.3s ease-out;
 }
 
-.expand .button:nth-child(1):hover .icon {
+.expand-icon .button span {
+  display: none;
+  font-size: 16px;
+  margin-left: 10px;
+  line-height: 60px;
+}
+
+.expand-icon .button:hover span {
+  display: block;
+}
+
+.expand-icon .button:hover {
+  border: 0.1px solid rgba(255, 255, 255, 0.9);
+  width: 200px;
+}
+
+.expand-icon .button:nth-child(1):hover .icon {
   background: #6686e5;
 }
 
-.expand .button:nth-child(2):hover .icon {
+.expand-icon .button:nth-child(2):hover .icon {
   background: var(--grey5);
 }
 
-.expand .button .icon i {
-  font-size: 28px;
-  transition: all 0.3s ease-out;
-}
-
-.expand .button span {
-  font-size: 16px;
-  margin-left: 10px;
-  margin-right: 20px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-
-.expand .button:nth-child(1) span {
+.expand-icon .button:nth-child(1) span {
   color: #6686e5;
 }
 
-.expand .button:nth-child(2) span {
+.expand-icon .button:nth-child(2) span {
   color: var(--grey5);
 }
 
-/*************/
+/*********************/
+/* Section abilities */
 
 /* (Down) Background gradient */
 @keyframes gradient {
